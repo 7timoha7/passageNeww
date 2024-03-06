@@ -1,0 +1,11 @@
+main {
+  margin: 0;
+  padding: 0;
+  /*background: rgba(210, 210, 210, 0.54);*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(210, 210, 210, 0.54) !important;
+}

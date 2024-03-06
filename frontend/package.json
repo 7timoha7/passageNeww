@@ -1,0 +1,96 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/lab": "^5.0.0-alpha.125",
+    "@mui/material": "^5.15.7",
+    "@mui/styled-engine": "^5.15.7",
+    "@mui/system": "^5.15.7",
+    "@mui/x-date-pickers": "^6.3.1",
+    "@react-oauth/google": "^0.11.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@types/i18n": "^0.13.6",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.23",
+    "@types/react": "^18.0.34",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-lazy-load-image-component": "^1.5.3",
+    "axios": "^1.3.5",
+    "dayjs": "^1.11.7",
+    "i18n-iso-countries": "^7.10.0",
+    "i18next": "^22.4.14",
+    "material-ui-popup-state": "^5.0.9",
+    "mdb-react-ui-kit": "^7.0.0",
+    "mui-tel-input": "^3.1.3",
+    "notistack": "^3.0.1",
+    "react": "^18.2.0",
+    "react-country-flag": "^3.1.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
+    "react-image-file-resizer": "^0.4.8",
+    "react-image-gallery": "^1.3.0",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-multi-carousel": "^2.8.3",
+    "react-phone-input-2": "^2.15.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.1",
+    "redux-persist": "^6.0.0",
+    "slick-carousel": "^1.8.1",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:test": "REACT_APP_API_URL=http://localhost:8010 PORT=3010 BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noemit"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react-image-gallery": "^1.2.4",
+    "@types/react-slick": "^0.23.13",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "postcss-loader": "^8.1.0",
+    "prettier": "2.8.4",
+    "resolve-url-loader": "^5.0.0",
+    "styled-components": "^6.1.8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
