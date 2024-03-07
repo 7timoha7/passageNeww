@@ -1,6 +1,6 @@
 export const ToolBarStylesTop = {
   flexWrap: 'wrap',
-  background: '#4eec80',
+  background: '#2ca5ff',
 };
 
 export const ToolBarTopText = {

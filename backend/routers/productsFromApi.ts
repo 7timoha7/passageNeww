@@ -16,46 +16,46 @@ import config from '../config';
 
 const productFromApiRouter = express.Router();
 
-const fetchData = async (method: string) => {
-    const apiUrl = 'https://fresh-test.1c-cloud.kg/a/edoc/hs/ext_api/execute';
-    const username = 'AUTH_TOKEN';
-    const password = 'jU5gujas';
-
-    try {
-        const response = await axios.post(
-            apiUrl,
-            {
-                auth: {
-                    clientID: '422ba5da-2560-11ee-8135-005056b73475',
-                },
-                general: {
-                    method,
-                    deviceID: '00000001-0001-0001-0001-000000015941',
-                },
-            },
-            {
-                headers: {
-                    Authorization: `Basic ${Buffer.from(`${username}:${password}`, 'utf-8').toString('base64')}`,
-                    configName: 'AUTHORIZATION',
-                    configVersion: 'Basic Auth',
-                },
-            },
-        );
-
-        return response.data;
-    } catch (error) {
-        if (axios.isAxiosError(error)) {
-            if (error.code === 'ETIMEDOUT') {
-                console.error('Превышен таймаут при выполнении запроса:', error);
-            } else {
-                console.error('Ошибка при выполнении запроса:', error.message, error.response?.data);
-            }
-        } else {
-            console.error('Не удалось выполнить запрос:', error);
-        }
-        throw error;
-    }
-};
+// const fetchData = async (method: string) => {
+//     const apiUrl = 'https://fresh-test.1c-cloud.kg/a/edoc/hs/ext_api/execute';
+//     const username = 'AUTH_TOKEN';
+//     const password = 'jU5gujas';
+//
+//     try {
+//         const response = await axios.post(
+//             apiUrl,
+//             {
+//                 auth: {
+//                     clientID: '422ba5da-2560-11ee-8135-005056b73475',
+//                 },
+//                 general: {
+//                     method,
+//                     deviceID: '00000001-0001-0001-0001-000000015941',
+//                 },
+//             },
+//             {
+//                 headers: {
+//                     Authorization: `Basic ${Buffer.from(`${username}:${password}`, 'utf-8').toString('base64')}`,
+//                     configName: 'AUTHORIZATION',
+//                     configVersion: 'Basic Auth',
+//                 },
+//             },
+//         );
+//
+//         return response.data;
+//     } catch (error) {
+//         if (axios.isAxiosError(error)) {
+//             if (error.code === 'ETIMEDOUT') {
+//                 console.error('Превышен таймаут при выполнении запроса:', error);
+//             } else {
+//                 console.error('Ошибка при выполнении запроса:', error.message, error.response?.data);
+//             }
+//         } else {
+//             console.error('Не удалось выполнить запрос:', error);
+//         }
+//         throw error;
+//     }
+// };
 
 // Функция для обработки строки description и извлечения размера, толщины и описания
 const processDescription = (description: string): { size: string; thickness: string; description: string } => {
