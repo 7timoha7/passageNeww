@@ -34,6 +34,7 @@ const fetchData = async (method: string) => {
                 },
             },
             {
+                timeout: 300000,
                 headers: {
                     Authorization: `Basic ${Buffer.from(`${username}:${password}`, 'utf-8').toString('base64')}`,
                     configName: 'AUTHORIZATION',
